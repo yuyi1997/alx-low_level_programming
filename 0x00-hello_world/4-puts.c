@@ -1,11 +1,13 @@
-#!/bin/bash
+
 #include <stdio.h>
-#include <string.h>
 
 /**
- *main-"The main function"
- *Return: 0 on sucess
- **/
+ * main - print the string in put function
+ *
+ * Description: using the main function
+ * this program prints "Programming is like building a multilingula puzzle"
+ *Return: 0
+ */
 int main(void)
 {
     puts("\"Programming is like building a multilingual puzzle");
