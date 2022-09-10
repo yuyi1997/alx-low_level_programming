@@ -1,4 +1,4 @@
-#include <stdio.h>0
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -15,4 +15,4 @@ int main(void)
 		putchar(d);
 	putchar('\n');
 	return (0);
-{
+}
