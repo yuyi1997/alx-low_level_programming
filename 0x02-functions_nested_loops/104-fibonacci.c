@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: always 0 (success)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
@@ -21,6 +21,7 @@ int main(void)
 		n = m + k;
 		k = m;
 		m = n;
+
 	}
 	return (0);
 }

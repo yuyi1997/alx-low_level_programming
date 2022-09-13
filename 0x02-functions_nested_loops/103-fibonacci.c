@@ -5,6 +5,7 @@
  *
  * Return: always 0 (success)
  */
+
 int main(void)
 {
 	int i, j;
@@ -22,7 +23,7 @@ int main(void)
 		if (fibonacci[j] > 4000000)
 			break;
 		if (fibonacci[j] % 2 == 0)
-		       sum = sum + fibonacci[j];
+			sum = sum + fibonacci[j];
 	};
 	printf("%ld\n", sum);
 	return (0);

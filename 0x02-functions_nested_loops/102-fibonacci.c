@@ -3,7 +3,7 @@
 /**
  * main - entry
  *
- * Return: always 0 (success)
+ * Return: always 0 (Success)
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 2; i < 50; i++)
 	{
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i + 2];
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 		if (i == 49)
 			printf("%ld\n", fibonacci[i]);
 		else

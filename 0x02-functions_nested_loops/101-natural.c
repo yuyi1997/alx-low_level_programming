@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: alaways 0 (success)
+ * Return: alaways 0 (Success)
  */
 int main(void)
 {
