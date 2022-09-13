@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	int checks;
 
-	if (isloer(c0 == 0)
+	if (islower(c) == 0)
 		check = 0;
 	else
 		check = 1;
