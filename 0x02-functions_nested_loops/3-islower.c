@@ -9,7 +9,7 @@
  */
 int _islower(int c)
 {
-	int checks;
+	int check;
 
 	if (islower(c) == 0)
 		check = 0;
