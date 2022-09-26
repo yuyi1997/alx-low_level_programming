@@ -5,6 +5,7 @@
  * @dest: the destination
  * @src: the source
  * @n: pointer to destruction
+ * Return: pointer to destinationint
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -16,7 +17,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		int i;
 
 		for (i = 0; i < size; i++)
-			dest[i] = src [i];
+			dest[i] = src[i];
 	}
 	return (dest);
 }
