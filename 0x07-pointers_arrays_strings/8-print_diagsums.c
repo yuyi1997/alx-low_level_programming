@@ -7,7 +7,8 @@
  * @a: the matrix
  * @size: size of the matrix
  */
- void print_digsums(int *a, int size)
+
+void print_diagsums(int *a, int size)
 {
 	int diagonal_sum1 = 0;
 	int diagonal_sum2 = 0;
