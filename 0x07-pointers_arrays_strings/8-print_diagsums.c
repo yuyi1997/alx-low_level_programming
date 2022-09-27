@@ -7,8 +7,7 @@
  * @a: the matrix
  * @size: size of the matrix
  */
-
-void print_diagsums(int *a, int size)
+ void print_digsums(int *a, int size)
 {
 	int diagonal_sum1 = 0;
 	int diagonal_sum2 = 0;
@@ -17,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (row = 0; row < size; row++)
 	{
 		i = (row * size) + row;
-		diagnoal_sum_1 += a[i];
+		diagonal_sum_1 += a[i];
 	}
 
 	for (row = 1; row <= size; row++)
@@ -26,5 +25,5 @@ void print_diagsums(int *a, int size)
 		diagonal_sum_2 += a[i];
 	}
 
-	printf("%d, %d\n", diagnoal_sum_1, diagonal_sum_2);
+	printf("%d, %d,\n", diagonal_sum_1, diagonal_sum_2);
 }
