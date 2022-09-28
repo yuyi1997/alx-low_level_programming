@@ -29,7 +29,7 @@ int is_prime_number(int n)
  * or 0 if num is not divisible
  */
 
-in is _divisible(int num, int div)
+int is_divisible(int num, int div)
 {
 	if (num % div == 0)
 		return (0);
