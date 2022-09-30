@@ -29,7 +29,7 @@ bool is_num(char *argvv)
 
 int main(int argc, char *argv[])
 {
-	int i - 1;
+	int i = 1;
 	int sum = 0;
 
 	if (argc == 1)
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 		}
 		i++;
 	}
-	ptrintf("%d\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
