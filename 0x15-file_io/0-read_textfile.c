@@ -7,38 +7,37 @@
  * Return: actual size read and prited
  */
 
-ssize_t read_textfile(consta char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fileDescriptor;
-	ssize_t n_read, n_wrote;
-	char *buffer;
+	int fdo, fdr, fdw;
+	char *temp;
 
 	if (filename == NULL)
 		return (0);
 
-	fileDescriptor = open(filename, 0_RDONLY);
-	if (fileDescriptor == -1)
+	temp = malloc(sizeof(char) * letters);
+	if (temp == NULL)
 		return (0);
-
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
-	n_read = read(fileDescriptor, buffer, letters);
-	if (n_read == -1)
+	
+	fdo = open(filename, O_RDONLY);
+	if (fdo < 0)
 	{
-		free(buffer);
-		close(fileDescriptor);
+		free(temp);
 		return (0);
 	}
 
-	n_wrote = write(STDOUT_FILENO, buffer, n_read);
-	if (n_wrote == -1)
+	fdr = read(fdo, temp, letters);
+	if (fdr < 0)
 	{
-		free(buffer);
-		close(fileDescriptor);
+		free(temp);
 		return (0);
 	}
+	
+	fdw = write(STDOUT_FILENO, temp, fdr);
+	free(temp);
+	close(fdo);
 
-	close(fileDescriptor);
-	return (n_read);
+	if (fdw < 0)
+		return (0);
+	return ((ssize_t)fdw);
 }
