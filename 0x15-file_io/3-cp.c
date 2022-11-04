@@ -63,18 +63,18 @@ int main(int argc, char *argv[])
 		if (erro < 0)
 			exit(100);
 		return (0);
-	}
-	/**
-	* safe_close - A function that closes a file and prints error when closed file
-	* @description: Description error for closed file
-	* Return: 1 on success, -1 on failure
-	*/
-	int safe_close(int description)
-	{
-		int error;
+}
+/**
+* safe_close - A function that closes a file and prints error when closed file
+* @description: Description error for closed file
+* Return: 1 on success, -1 on failure
+*/
+int safe_close(int description)
+{
+	int error;
 
-		error = close(description);
-		if (error < 0)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", description);
-		return (error);
-	}
+	error = close(description);
+	if (error < 0)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", description);
+	return (error);
+}
