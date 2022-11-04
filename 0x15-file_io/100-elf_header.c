@@ -9,5 +9,5 @@
 int main(int argc, char *argv[])
 {
 	printf("argc:%d, argv:%p\n", argc, (void *)*argv);
-	returb (1);
+	return (1);
 }
